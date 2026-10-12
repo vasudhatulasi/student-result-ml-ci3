@@ -1,0 +1,13 @@
+metrics = {
+    "accuracy": float(accuracy),
+    "training_records": len(X_train),
+    "testing_records": len(X_test)
+}
+
+with open("metrics.json", "w") as file:
+    json.dump(metrics, file, indent=4)
+{
+    "accuracy": 0.9667,
+    "training_records": 240,
+    "testing_records": 60
+}
